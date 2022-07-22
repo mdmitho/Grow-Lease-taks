@@ -1,20 +1,22 @@
 
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Home from './Components/Home/Home'
 import Sidebar from './Components/Sidebar-Nav/Sidebar';
 import Deals from './Components/Deals/Deals';
 import SearchBar from './Components/SearchBar/SearchBar';
+import AddNewDeal from './Components/AddNewDeal/AddNewDeal';
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-secondary">
      <SearchBar></SearchBar>
 
       <Routes>
+        <Route path='/' element={<Sidebar/>}/>
         <Route path="/sidebar" element={<Sidebar />}>
           <Route path="deals" element={<Deals></Deals>}></Route>
+          <Route path="addnewdeal" element={<AddNewDeal></AddNewDeal>}></Route>
         </Route>
       </Routes>
     </div>

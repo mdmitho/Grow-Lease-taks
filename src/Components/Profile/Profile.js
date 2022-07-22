@@ -4,7 +4,7 @@ const Profile = () => {
     return (
       <>
     
-        <div className="flex my-3">
+        <div className="flex ">
           <div class="avatar p-2">
             <div class="w-14 rounded-full">
               <img src="https://placeimg.com/192/192/people" />
