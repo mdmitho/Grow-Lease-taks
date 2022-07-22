@@ -1,0 +1,22 @@
+import React from 'react';
+
+const Profile = () => {
+    return (
+      <>
+      <h1 className='text-xl font-bold text-left my-5 text-info'>Grow Lease</h1>
+        <div className="flex my-3">
+          <div class="avatar p-2">
+            <div class="w-14 rounded-full">
+              <img src="https://placeimg.com/192/192/people" />
+            </div>
+          </div>
+          <div className="p-2 text-left">
+            <h1 className="font-bold ">Ankit Kumar Jha</h1>
+            <p>Admin</p>
+          </div>
+        </div>
+      </>
+    );
+};
+
+export default Profile;
