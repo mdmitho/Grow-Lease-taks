@@ -18,6 +18,7 @@ const Deals = () => {
           </div>
         </div>
 
+{/* Table start */}
         <div class="overflow-x-auto w-full">
           <table class="table mx-auto">
             {/* <!-- head --> */}
@@ -40,6 +41,37 @@ const Deals = () => {
             </thead>
             <tbody>
               {/* <!-- row 1 --> */}
+              <tr>
+                <th>
+                  <label>
+                    <input type="checkbox" class="checkbox" />
+                  </label>
+                </th>
+                <td>
+                  <div class="flex items-center space-x-3">
+                    <div class="avatar">
+                      <div class="w-8 rounded-full">
+                        <img src="https://placeimg.com/192/192/people" />
+                      </div>
+                    </div>
+                    <div>
+                      <div class="font-bold">Hart Hagerty</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  Lorem ipsum dolor sit amet....
+                  <br />
+                </td>
+                <td>$100 Corore</td>
+                <td>Viow Charts</td>
+                <td>3%</td>
+                <td>3%</td>
+                <td>2 Years</td>
+                <th>
+                  <button class="btn btn-ghost btn-xs">details</button>
+                </th>
+              </tr>
               <tr>
                 <th>
                   <label>
