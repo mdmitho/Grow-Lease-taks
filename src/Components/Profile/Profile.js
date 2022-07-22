@@ -3,7 +3,7 @@ import React from 'react';
 const Profile = () => {
     return (
       <>
-      <h1 className='text-xl font-bold text-left my-5 text-info'>Grow Lease</h1>
+    
         <div className="flex my-3">
           <div class="avatar p-2">
             <div class="w-14 rounded-full">
