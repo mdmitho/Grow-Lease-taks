@@ -1,5 +1,10 @@
 import React from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 
+
+
+
+const notify = () => toast.success("Success! This deal has been saved & published for users.");
 const AddNewDeal = () => {
     return (
       <div>
@@ -10,24 +15,49 @@ const AddNewDeal = () => {
           </div>
           <div className="">
             <button class="btn btn-error m-3 text-white">Cancel</button>
-            <button class="btn btn-info m-3 text-white">Make it Live</button>
+            <button onClick={notify} class="btn btn-info m-3 text-white">
+              Make it Live
+            </button>
           </div>
         </div>
         {/* new dal and button End */}
 
         {/* Click to Upload fille start */}
-        <div className="w-32 h-32 bg-accent m-5">
-          <div className="h-10 w-10 mx-auto pt-7">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJg3X50TPQihJPuzlNMKwRe6Lz4uIrRc2QpA&usqp=CAU"
-              alt=""
-            />
+
+        <form action="/action_page.php ">
+          <div className="w-32 h-32 bg-accent m-5">
+            <div className="h-10 w-10 mx-auto pt-7">
+              <img
+                className=""
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJg3X50TPQihJPuzlNMKwRe6Lz4uIrRc2QpA&usqp=CAU"
+                alt=""
+              />
+            </div>
+            <div className="text-left ml-8 mt-5  ">
+              <input
+                type="file"
+                id="myFile"
+                name="filename"
+                className="text-secondary
+                cursor-pointer
+              block w-full text-sm text-slate-500
+      file:mr-4 file:py-2 file:px-4
+      file:rounded-full file:border-0
+      file:text-sm file:font-semibold
+      file:bg-accent file:text-accent
+      hover:file:bg-accent
+ 
+              "
+              />
+            </div>
+            <h1 className=" text-black">Click to Upload</h1>
           </div>
-          <h1 className="pt-7 text-black">Click to Upload</h1>
-        </div>
+        </form>
+
         {/* Click to Upload fille end */}
 
         {/* Company Name And Amount start */}
+
         <div className="flex justify-between mx-5">
           <div className="w-full mr-5 text-left">
             <label class="block">
@@ -71,8 +101,8 @@ const AddNewDeal = () => {
           ></textarea>
         </div>
         {/* Company Description End */}
-        {/* Company Upload Graphs about performance history start */}
-        <div className="p-4">
+        {/*  Upload Graphs about performance history start */}
+        <div className="pl-5">
           <label class="block text-left ">
             <span class=" after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
               Upload Graphs about performance history
@@ -80,16 +110,38 @@ const AddNewDeal = () => {
           </label>
         </div>
 
-        <div className="w-32 h-32 bg-accent m-5 ">
-          <div className="h-10 w-10 mx-auto pt-7">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJg3X50TPQihJPuzlNMKwRe6Lz4uIrRc2QpA&usqp=CAU"
-              alt=""
-            />
+        <form action="/action_page.php "
+        type="file"
+        >
+          <div className="w-32 h-32 bg-accent m-5">
+            <div className="h-10 w-10 mx-auto pt-7">
+              <img
+                className=""
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJg3X50TPQihJPuzlNMKwRe6Lz4uIrRc2QpA&usqp=CAU"
+                alt=""
+              />
+            </div>
+            <div className="text-left ml-8 mt-5  ">
+              <input
+                type="file"
+                id="myFile"
+                name="filename"
+                className="text-secondary
+                cursor-pointer
+              block w-full text-sm text-slate-500
+      file:mr-4 file:py-2 file:px-4
+      file:rounded-full file:border-0
+      file:text-sm file:font-semibold
+      file:bg-accent file:text-accent
+      hover:file:bg-accent
+ 
+              "
+              />
+            </div>
+            <h1 className=" text-black">Click to Upload</h1>
           </div>
-          <h1 className="pt-7 text-black">Click to Upload</h1>
-        </div>
-        {/* Company Upload Graphs about performance history start */}
+        </form>
+        {/*  Upload Graphs about performance history start */}
 
         {/* Company Any other information about Performance History start */}
         <div class="form-control m-5">
@@ -103,6 +155,7 @@ const AddNewDeal = () => {
             placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis qui nobis maxime tempore illum incidunt non error fugiat inventore odio quod dolorem, debitis pariatur quos dolorum ipsum. Maxime, at! Facilis"
           ></textarea>
         </div>
+        <Toaster />
       </div>
     );
 };
