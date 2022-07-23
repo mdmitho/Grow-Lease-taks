@@ -1,7 +1,7 @@
 import React from 'react';
-import {Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import Profile from '../Profile/Profile';
-import SearchBar from '../SearchBar/SearchBar';
+
 
 
 
@@ -20,50 +20,52 @@ const Sidebar = () => {
               <label for="my-drawer-2" class="drawer-overlay"></label>
               <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-black">
                 {/* <!-- Sidebar content here --> */}
-                <div className="">
+                <div className="my-5">
                   <Profile></Profile>
                 </div>
                 <li>
-                  <div className="mt-5">
-                    <div className="">
-                      <img
-                        className="w-6 h-6 inline-block"
-                        src="https://icons.veryicon.com/png/o/miscellaneous/decon/dashboard-76.png"
-                        alt=""
-                      />
+                  <NavLink to="/sidebar/dashboard">
+                    <div className="flex ">
+                      <div className="mr-2">
+                        <img
+                          className="w-6 h-6 "
+                          src="https://icons.veryicon.com/png/o/miscellaneous/decon/dashboard-76.png"
+                          alt=""
+                        />
+                      </div>
+                      <div className="">
+                        <a> Dashboard</a>
+                      </div>
                     </div>
-                    <div className="">
-                      <a className="">Dashboard</a>
-                    </div>
-                  </div>
+                  </NavLink>
                 </li>
                 <li>
-                  <div className="">
-                    <div className="">
-                      <img
-                        className="w-5 h-5 inline-block"
-                        src="https://i.pinimg.com/originals/aa/9e/84/aa9e84de3c8bc1ed8bc2c6253ceabdbb.png"
-                        alt=""
-                      />
+                  <NavLink to="/sidebar/deals">
+                    <div className="flex">
+                      <div className="mr-3">
+                        <img
+                          className="w-5 h-5 inline-block"
+                          src="https://i.pinimg.com/originals/aa/9e/84/aa9e84de3c8bc1ed8bc2c6253ceabdbb.png"
+                          alt=""
+                        />
+                      </div>
+                      <div className="">Deals</div>
                     </div>
-                    <div className="">
-                      <Link to="/sidebar/deals">Deals</Link>
-                    </div>
-                  </div>
+                  </NavLink>
                 </li>
                 <li>
-                  <div className="">
-                    <div className="">
-                      <img
-                        className="w-5 h-3 inline-block"
-                        src="https://flyclipart.com/thumb2/mail-icon-mail-multimedia-icon-with-png-and-vector-format-18627.png"
-                        alt=""
-                      />
+                  <NavLink to="/sidebar/email">
+                    <div className="flex">
+                      <div className="mr-3">
+                        <img
+                          className="w-5 h-3 inline-block"
+                          src="https://flyclipart.com/thumb2/mail-icon-mail-multimedia-icon-with-png-and-vector-format-18627.png"
+                          alt=""
+                        />
+                      </div>
+                      <div className="">Emails</div>
                     </div>
-                    <div className="">
-                      <a className="">Emails</a>
-                    </div>
-                  </div>
+                  </NavLink>
                 </li>
                 <li>
                   <div className="">
@@ -107,7 +109,7 @@ const Sidebar = () => {
                     </div>
                   </div>
                 </li>
-           
+                <div className="divider"></div>
                 <li>
                   <div className="">
                     <div className="">

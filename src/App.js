@@ -6,6 +6,8 @@ import Deals from './Components/Deals/Deals';
 import SearchBar from './Components/SearchBar/SearchBar';
 import AddNewDeal from './Components/AddNewDeal/AddNewDeal';
 import Zomato from './Components/Zomato/Zomato';
+import Dashboard from './Components/Dashboard/Dashboard';
+import Email from './Components/Email/Email';
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
           <Route path="deals" element={<Deals></Deals>}></Route>
           <Route path="addnewdeal" element={<AddNewDeal></AddNewDeal>}></Route>
           <Route path="zomato" element={<Zomato></Zomato>}></Route>
+          <Route path="dashboard" element={<Dashboard></Dashboard>}></Route>
+          <Route path="email" element={<Email></Email>}></Route>
         </Route>
       </Routes>
     </div>
