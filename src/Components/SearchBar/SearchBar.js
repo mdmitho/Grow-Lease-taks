@@ -23,7 +23,7 @@ const SearchBar = () => {
                 </svg>
               </label>
 
-              <h1 className='text-xl text-info font-bold ml-5'>Grow Lease</h1>
+              <h1 className='text-xl text-info font-bold ml-5 '>Grow Lease</h1>
           </div>
 
           <div class="navbar-center">
